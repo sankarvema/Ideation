@@ -1,0 +1,389 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Add Campaign</title>
+        
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+		<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/stylesheets/bootstrap-theme.min.css">
+        <link rel="stylesheet" media="screen" href="assets/stylesheets/main.css">
+
+        <link rel="stylesheet" href="assets/stylesheets/jquery-ui.css">
+
+	 
+
+		<script src="assets/javascripts/jquery-1.11.3.min.js"></script>
+		<script src="assets/javascripts/jquery-ui-1.11.4.min.js"></script>
+
+		<script src="assets/javascripts/bootstrap.min.js"></script>
+		<script src="assets/javascripts/main.js"></script>
+        
+    </head>
+    
+    <body>
+        <section class="header">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+   
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/ideation_banner.png" height="40" valign="top">
+        </a>
+        
+    </div>
+
+   
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse js-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>              
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-sm-3">
+                        <!--<ul>
+                            <li class="dropdown-header">Admin</li>                            
+                            <div id="menCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div>                              
+                              </div>
+                              
+                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                        </ul>-->
+                    </li>
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">Campaigns</li>
+                            <li><a href="#">Start Campaign</a></li>
+                            <li><a href="#">Active Campaigns</a></li>
+                            <li><a href="#">All Campaigns</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Build Templates</li>
+                            <li><a href="#">Ideation Template</a></li>
+                            <li><a href="#">Workflow Templates</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">Users</li>
+                            <li><a href="#">Add Users</a></li>
+                            <li><a href="#">Manager Users</a></li>
+                            <li><a href="#">Bulk Import</a></li>                            
+                            <li><a href="#">Primary Buttons & Default</a></li>                          
+                        </ul>
+                    </li>
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">More...</li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Plave Holder</a></li>
+                            <li><a href="#">Slide down on Hover</a></li>                         
+                        </ul>
+                    </li>
+                </ul>               
+            </li>
+            <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ideation <span class="caret"></span></a>                
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">Features</li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Four Columns Grid</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Additional...</li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">Plus</li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Place Holder</a></li>
+                            <li><a href="#">Coloured Headers</a></li>                            
+                            <li><a href="#">Primary Buttons & Default</a></li>                          
+                        </ul>
+                    </li>
+                    <li class="col-sm-3">
+                        <ul>
+                            <li class="dropdown-header">Much more</li>
+                            <li><a href="#">Easy to Customize</a></li>
+                            <li><a href="#">Calls to action</a></li>
+                            <li><a href="#">Custom Fonts</a></li>
+                            <li><a href="#">Slide down on Hover</a></li>                         
+                        </ul>
+                    </li>
+                    <li class="col-sm-3">
+                        <!--<ul>
+                            <li class="dropdown-header">Women Collection</li>                            
+                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Denin jacket stamped</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div>                              
+                              </div>
+                              
+                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                        </ul>-->
+                    </li>
+                </ul>               
+            </li>
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-envelope"></span> Messages 
+                    <span class="badge">24</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-envelope"></span> My Ideas 
+                <span class="badge">2</span>
+            </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Password</a></li>
+            <li><a href="#">Place holder</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-trash"></span> Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+
+    </div>
+  </div>
+</nav>        
+
+        </section>
+
+        <section class="body">
+
+    <script>
+        $(function() {
+            $( "#startDate" ).datepicker();
+            $( "#endDate" ).datepicker();
+        });
+    </script>
+
+    <div class="container">
+
+    
+            <div class="form-action">Create Item</div>
+        
+
+        <div class="form-heading">Add Campaign</div>
+
+         
+
+<form action="/campaign/submit?action=created" method="POST" id="campaignForm">
+    
+        
+            <input type="hidden" name="id" value='' >
+            
+
+
+
+
+
+
+
+
+
+
+
+  <div class="form-group ">
+    <label for="title" class="col-lg-2 control-label">Title</label>
+    <div class="col-lg-10">
+      <input class="form-control" type="text" id="title" name="Title" value="" name="title" size="90" placeholder="Campaign Title">
+      <span class="help-inline">Required</span>
+    </div>
+  </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+  <div class="form-group ">
+    <label for="objective" class="col-lg-2 control-label">Objective</label>
+    <div class="col-lg-10">
+      <input class="form-control" type="text" id="objective" name="Objective" value="" name="objective" placeholder="Campaign Objective" rows="5" cols="30">
+      <span class="help-inline">Required</span>
+    </div>
+  </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+  <div class="form-group ">
+    <label for="owner" class="col-lg-2 control-label">Owner</label>
+    <div class="col-lg-10">
+      <input class="form-control" type="text" id="owner" name="Owner" value="" name="owner" size="90" placeholder="Campaign Owner">
+      <span class="help-inline">Email</span>
+    </div>
+  </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+  <div class="form-group ">
+    <label for="startDate" class="col-lg-2 control-label">Start Date</label>
+    <div class="col-lg-10">
+      <input class="form-control" type="text" id="startDate" name="Start Date" value="" name="startDate" placeholder="mm/dd/yyyy">
+      <span class="help-inline">Date (&#x27;mm/dd/yyyy&#x27;)</span>
+    </div>
+  </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+  <div class="form-group ">
+    <label for="endDate" class="col-lg-2 control-label">End Date</label>
+    <div class="col-lg-10">
+      <input class="form-control" type="text" id="endDate" name="End Date" value="" name="endDate" placeholder="mm/dd/yyyy">
+      <span class="help-inline">End date should be later of start date</span>
+    </div>
+  </div>
+
+
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-success">
+                     <span class="glyphicon glyphicon-ok"></span> Submit
+                <button>
+                <button type="submit" class="btn btn-warning">
+                     <span class="glyphicon glyphicon-remove"></span> Reset
+                <button>
+            </div>
+        
+</form>
+
+
+    </div>
+
+</section>
+
+        <section class="footer"><div class="navbar navbar-default navbar-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2015 - All rights reserverd. Tool built and managed by CTO, India Team
+      	<br/>Running: Scala Play v2.4.2
+      </p>
+      
+      <a href="https://c3.csc.com/groups/nxt-gen-tech" class="navbar-btn btn-danger btn pull-right">
+      <span class="glyphicon glyphicon-star"></span>  Subscribe on C3</a>
+    </div>
+    
+    
+  </div></section>
+    </body>
+</html>
