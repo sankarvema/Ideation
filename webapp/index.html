@@ -1,78 +1,41 @@
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>Add Idea</title>
-        
-       <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png">
-
-		<link rel="stylesheet" href="../assets/stylesheets/bootstrap.min.css">
-		<link rel="stylesheet" href="../assets/stylesheets/bootstrap-theme.min.css">
-        <link rel="stylesheet" media="screen" href="../assets/stylesheets/main.css">
-
-        <link rel="stylesheet" href="../assets/javascript/jquery-ui.css">
-
-	 
-
-		<script src="../assets/javascripts/jquery-1.11.3.min.js"></script>
-		<script src="../assets/javascripts/jquery-ui-1.11.4.min.js"></script>
-
-		<script src="../assets/javascripts/bootstrap.min.js"></script>
-		<script src="../assets/javascripts/main.js"></script>
-		  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/stylesheets/main.css">
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Off Canvas Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   
-   <link href="../assets/stylesheets/offcanvas.css" rel="stylesheet">
-    <style>  @media (max-width: 500px) {
-     /* 500px is random value, adjust it as per your need */
-    .icon3{
-        display : block;
-        padding :  5px 5px;
-    }
-    .text1{
-        display:none;
-    }
-    
-nav {
-			
-			width: 8em;
-		}
-    
-}</style>
-        
-        
-    </head>
-    
-    <body>
-    
+  <!-- Styles -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../assets/stylesheets/main.css"/>
 
-      <nav>
-    <ul class="list-unstyled main-menu">
+</head>
 
-    <!--Include your navigation here-->
-    <li class="text-left"><a href="#" id="nav-close">X</a></li>
- 
-  
-			        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="text1"> home</span></a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-user"></span><span class="text1"> profile</span></a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="text1"> mesgs</span><span class="badge">24</span></a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="text1" > mails</span></a></li>
-			              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="text1"> home</span></a></li>
-			        <li><a href="#"><span class="glyphicon glyphicon-alert"></span><span class="text1" > notifcs</span> <span class="badge">5</span></a></li>
-		         
-  </ul></nav>
+<body>
+
+    <nav>
+        <ul class="list-unstyled main-menu">
           
-    <div class="navbar navbar-default navbar-fixed-top">      
+          <!--Include your navigation here-->
+          <li class="text-right"><a href="#" id="nav-close">X</a></li>
+          <li><a href="#">Menu One <span class="icon"></span></a></li>
+          <li><a href="#">Menu Two <span class="icon"></span></a></li>
+          <li><a href="#">Menu Three <span class="icon"></span></a></li>
+          <li><a href="#">Dropdown</a>
+            <ul class="list-unstyled">
+                <li class="sub-nav"><a href="#">Sub Menu One <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Sub Menu Two <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Sub Menu Three <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Sub Menu Four <span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Sub Menu Five <span class="icon"></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#">Menu Four <span class="icon"></span></a></li>
+          <li><a href="#">Menu Five <span class="icon"></span></a></li>
+        </ul>
+      </nav>
+          
+    <div class="navbar navbar-inverse navbar-fixed-top">      
         
         <!--Include your brand here-->
          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
@@ -194,145 +157,52 @@ nav {
     
         <div class="navbar-header pull-right">
           <a id="nav-expander" class="nav-expander fixed">
-            MENU &nbsp;
+            MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
           </a>
         </div>
     </div>
-        </section>
 
-        <section class="body">
-
-   <script>
-        $(function() {
-            $( "#submitDate" ).datepicker();
-        });
-    </script>
-
-     <div class="container">
-   
-            <div class="form-action">Create Item</div> 
-        
-
-        <div class="form-heading">Add Idea</div>
-
-        
-
-<form action="/idea/submit?action=created" method="POST" id="IdeaForm">
-     
-       
-            <input type="hidden" name="id" value='' >
-<input type="hidden" name="action" value='created' >
-            
-
-
-
-
-
-
-
-
-
-
-
-  <div class="form-group ">
-    <label for="title" class="col-lg-2 control-label">Title</label>
-    <div class="col-lg-10">
-      <input class="form-control" type="text" id="title" name="Title" value="" name="title" size="90" placeholder="Idea Title">
-      <span class="help-inline">Required</span>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+      </div>
     </div>
-  </div>
 
-
-            
-
-
-
-
-
-
-
-
-
-  <div class="form-group ">
-    <label for="description" class="col-lg-2 control-label">description</label>
-    <div class="col-lg-10">
-      <input class="form-control" type="text" id="description" name="description" value="" name="description" placeholder="Idea description" rows="5" cols="30">
-      <span class="help-inline"></span>
-    </div>
-  </div>
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-  <div class="form-group ">
-    <label for="owner" class="col-lg-2 control-label">Owner</label>
-    <div class="col-lg-10">
-      <input class="form-control" type="text" id="owner" name="Owner" value="" name="owner" size="90" placeholder="Idea Owner">
-      <span class="help-inline">Email</span>
-    </div>
-  </div>
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-  <div class="form-group ">
-    <label for="submitDate" class="col-lg-2 control-label">submitDate</label>
-    <div class="col-lg-10">
-      <input class="form-control" type="text" id="submitDate" name="submitDate" value="" name="submitDate" size="90" placeholder="Idea submitDate">
-      <span class="help-inline">Date (&#x27;yyyy-MM-dd&#x27;)</span>
-    </div>
-  </div>
-
-
-
-              <!-- <input type="hidden" name="submitDate" value='' >-->
-            
-            <div class="form-actions">
-                <button type="submit" class="btn btn-success">
-                     <span class="glyphicon glyphicon-ok"></span> Submit
-                </button>
-                <button type="submit" class="btn btn-warning">
-                     <span class="glyphicon glyphicon-remove"></span> Reset
-                </button>
-            </div>
-    
-</form>
-
-        </section>
-
-        <section class="footer"><div class="navbar navbar-default navbar-bottom">
     <div class="container">
-      <p class="navbar-text pull-left">© 2015 - All rights reserverd. Tool built and managed by CTO, India Team
-      	<br/>Running: Scala Play v2.4.2
-      </p>
-      
-      <a href="https://c3.csc.com/groups/nxt-gen-tech" class="navbar-btn btn-danger btn pull-right">
-      <span class="glyphicon glyphicon-star"></span>  Subscribe on C3</a>
-    </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+    </div> <!-- /container -->
     
     
-  </div></section> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../assets/javascripts/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="../assets/javascripts/jquery.navgoco.js"></script>
@@ -372,8 +242,8 @@ nav {
         	
       });
       </script>
-  
+
+
+   
     </body>
 </html>
-
-

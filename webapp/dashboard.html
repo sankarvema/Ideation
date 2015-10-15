@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>Main Dashboard</title>
-        
-        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Off Canvas Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
 
 		<link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/stylesheets/bootstrap-theme.min.css">
-        <link rel="stylesheet" media="screen" href="assets/stylesheets/main.css">
+ 
 
        
 
@@ -19,70 +18,91 @@
 
 		<script src="assets/javascripts/bootstrap.min.js"></script>
 		<script src="assets/javascripts/main.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+
+	
+  <link href="assets/stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="assets/stylesheets/jquery.bootgrid.css" rel="stylesheet" />
+    <script src="assets/javascripts/modernizr-2.8.1.js"></script>
+    <script type="text/javascript" src="assets/javascripts/RowSorter.js"></script>
+    
+    <style>
+         @-webkit-viewport { width: device-width; }
+            @-moz-viewport { width: device-width; }
+            @-ms-viewport { width: device-width; }
+            @-o-viewport { width: device-width; }
+            @viewport { width: device-width; }
+
+        body {
+            padding-top: 70px;
+        }
+
+        </style>
+        
+  <!-- Styles -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <style>  @media (max-width: 500px) {
+     /* 500px is random value, adjust it as per your need */
+    .icon3{
+        display : block;
+        padding :  5px 5px;
+    }
+    .text1{
+        display:none;
+    }
+    
+nav {
+			
+			width: 8em;
+		}
+    
+}</style>
         
     </head>
     
     <body>
-        <section class="header">
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-   
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/ideation_banner.png" height="40" valign="top">
-        </a>
         
-    </div>
 
-   
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <div class="collapse navbar-collapse js-navbar-collapse">
-        <ul class="nav navbar-nav">
+      <nav>
+    <ul class="list-unstyled main-menu">
+
+    <!--Include your navigation here-->
+    <li class="text-left"><a href="#" id="nav-close">X</a></li>
+ 
+  
+			        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="text1"> home</span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-user"></span><span class="text1"> profile</span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="text1"> mesgs</span><span class="badge">24</span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span class="text1" > mails</span></a></li>
+			              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span><span class="text1"> home</span></a></li>
+			        <li><a href="#"><span class="glyphicon glyphicon-alert"></span><span class="text1" > notifcs</span> <span class="badge">5</span></a></li>
+		         
+  </ul></nav>
+          
+    <div class="navbar navbar-default navbar-fixed-top">      
+        
+        <!--Include your brand here-->
+         <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+       <a class="navbar-brand" href="#">
+        <img src="assets/images/ideation_banner.png" height="40" align="top">
+        </a>
+         <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
             <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li class="dropdown mega-dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>              
                 <ul class="dropdown-menu mega-dropdown-menu">
                     <li class="col-sm-3">
-                        <!--<ul>
-                            <li class="dropdown-header">Admin</li>                            
-                            <div id="menCollection" class="carousel slide" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <div class="item active">
-                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                    <h4><small>Summer dress floral prints</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                    <h4><small>Denin jacket stamped</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                </div>                              
-                              </div>
-                              
-                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div>
-                            <li class="divider"></li>
-                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                        </ul>-->
+                      
                     </li>
                     <li class="col-sm-3">
                         <ul>
@@ -152,39 +172,7 @@
                         </ul>
                     </li>
                     <li class="col-sm-3">
-                        <!--<ul>
-                            <li class="dropdown-header">Women Collection</li>                            
-                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <div class="item active">
-                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                    <h4><small>Summer dress floral prints</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                </div>
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                    <h4><small>Denin jacket stamped</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                </div>                              
-                              </div>
-                              
-                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div>
-                            <li class="divider"></li>
-                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-                        </ul>-->
+                       
                     </li>
                 </ul>               
             </li>
@@ -195,7 +183,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
         <li>
             <a href="#">
                 <span class="glyphicon glyphicon-envelope"></span> My Ideas 
@@ -214,16 +202,15 @@
         </li>
       </ul>
     </div><!-- /.nav-collapse -->
-
+    
+    
+        <div class="navbar-header pull-right">
+          <a id="nav-expander" class="nav-expander fixed">
+            MENU &nbsp;
+          </a>
+        </div>
     </div>
-  </div>
-</nav>        
-
-        </section>
-
-        <section class="body">
-
-    <div class="container hidden-sm hidden-xs">
+ <div class="container hidden-sm hidden-xs">
         <div class="row">
             <div class="col-xs-12">
                 <div class="jumbotron">
@@ -251,45 +238,88 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-2">
-                <div class="tag">
-                    <span class="tagitem">customer</span>
-                    <span class="tagitem">account</span>
-                </div>
-                <div class="filters">Lorem ipsum dolor sit amet Voluptatum, voluptates.</div>
-            </div>
-            <div class="col-xs-10">
+       
+            <div class="col-xs-12">
                 <div class="table-responsive"> 
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr>
-                                <th>Row</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>John</td>
-                                <td>Carter</td>
-                                <td>johncarter-mail.com</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Peter</td>
-                                <td>Parker</td>
-                                <td>peterparker-mail.com</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>John</td>
-                                <td>Rambo</td>
-                                <td>johnrambo-mail.com</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                   <div class="container-fluid">
+        <div class="row">
+
+            
+                <div class="col-md-12">
+                    <button id="append" type="button" class="btn btn-default">Append</button>
+                    
+                    <button id="removeSelected" type="button" class="btn btn-default">Delete</button>
+                
+                <table id="mytable" class="table table-condensed table-hover table-striped" data-selection="true" data-multi-select="true" data-row-select="true" data-keep-selection="true">
+                    <thead>
+                        <tr>
+                            <th data-column-id="challenge" data-identifier="true" data-type="text">Challenge</th>
+                            <th data-column-id="desc"  data-type="text">Description</th>
+                            <th data-column-id="sponser" data-order="asc">Sponser</th>
+                            <th data-column-id="date" data-identifier="true" data-type="text">Duration</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>chalenge1</td>
+                                    <td>999</td>
+                                    <td>me@rafaelstaib.com</td>
+                                    <td>11.12.2014</td>
+                        </tr>
+                        <tr>
+                                    <td>chalenge2</td>
+                                    <td>Hidden value 1</td>
+                                    <td>me@rafaelstaib.com</td>
+                                    <td>12.12.2014</td>
+
+                                </tr>
+                                <tr>
+                                    <td>challenge3</td>
+                                    <td>Hidden value 1</td>
+                                    <td>me@rafaelstaib.com</td>
+                                    <td>10.12.2014</td>
+                                    
+                                </tr>
+                               <tr>
+                                    <td>challenge4</td>
+                                    <td>Hidden value 1</td>
+                                    <td>mo@rafaelstaib.com</td>
+                                    <td>12.08.2014</td>
+                                </tr>
+                                <tr>
+                                    <td>chalenge5</td>
+                                    <td>Hidden value 1</td>
+                                    <td>ma@rafaelstaib.com</td>
+                                    <td>12.06.2014</td>
+                                </tr>
+                                <tr>
+                                    <td>halenge</td>
+                                    <td>Hidden value 1</td>
+                                    <td>me@rafaelstaib.com</td>
+                                    <td>12.12.2014</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>challenge7</td>
+                                    <td>Linksdbhwdjew</td>
+                                    <td>ma@rafaelstaib.com</td>
+                                    <td>12.11.2014</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>challenge8</td>
+                                    <td>Hidden value 1</td>
+                                    <td>mo@rafaelstaib.com</td>
+                                    <td>15.12.2014</td>
+                                </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+                   
                 </div>
             </div>
         </div>
@@ -392,7 +422,7 @@
 
         <section class="footer"><div class="navbar navbar-default navbar-bottom">
     <div class="container">
-      <p class="navbar-text pull-left">© 2015 - All rights reserverd. Tool built and managed by CTO, India Team
+      <p class="navbar-text pull-left">Ã‚Â© 2015 - All rights reserverd. Tool built and managed by CTO, India Team
       	<br/>Running: Scala Play v2.4.2
       </p>
       
@@ -402,6 +432,102 @@
     
     
   </div></section>
+  
+
+   
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.navgoco.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+    $(document).ready(function(){												
+       
+       //Navigation Menu Slider
+        $('#nav-expander').on('click',function(e){
+      		e.preventDefault();
+      		$('body').toggleClass('nav-expanded');
+      	});
+      	$('#nav-close').on('click',function(e){
+      		e.preventDefault();
+      		$('body').removeClass('nav-expanded');
+      	});
+      	
+      	
+      	// Initialize navgoco with default options
+        $(".main-menu").navgoco({
+            caret: '<span class="caret"></span>',
+            accordion: false,
+            openClass: 'open',
+            save: true,
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+  
+        	
+      });
+      </script>
+
+<script src="assets/javascripts/jquery-1.11.1.min.js"></script>
+    <script src="assets/javascripts/bootstrap.js"></script>
+    <script src="assets/javascripts/jquery.bootgrid.js"></script>
+    <script src="assets/javascripts/jquery.bootgrid.fa.js"></script>
+    <script type="text/javascript">
+RowSorter("#mytable");
+
+</script>
+    <script>
+        $(function ()
+        {
+           function init()
+                {
+                    $("#mytable").bootgrid({
+                        formatters: {
+                            "link": function(column, row)
+                            {
+                                return "<a href=\"#\">" + column.id + ": " + row.id + "</a>";
+                            }
+                        },
+                        rowCount: [10, 50, 75,-1]
+                    });
+                }
+                
+                init();
+                $("#removeSelected").on("click", function ()
+                {
+                    $("#mytable").bootgrid("remove");
+                });
+                $("#append").on("click", function ()
+                {
+                    $("#mytable").bootgrid("append", [{
+                            challenge: "challenge0",
+                            desc: "Gestergfrregn",
+                            sponser: "hh@derhase.de",
+                            duration: "12-1-22"
+                        },
+                        {
+                            challenge: "challenge90",
+                            desc: "Gestergfrregn",
+                            sponser: "hh@derhase.de",
+                            duration: "12-12-22"
+                        }]);
+                });
+               
+
+            
+        });
+    </script>
+   
     </body>
 </html>
-
