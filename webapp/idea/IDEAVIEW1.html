@@ -306,9 +306,21 @@ Hundreds of the world’s largest brands rely on OpenStack to run their business
         <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
       </div>
       <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
-    </div>
-
+    </div><input type="file" name="attachment" id="attachment" onchange="document.getElementById('moreUploadsLink').style.display = 'block';" />
+<div id="moreUploads"></div>
+<div id="moreUploadsLink" style="display:none;"><a href="javascript:addFileInput();">Attach another File</a></div>
+<script>var upload_number = 2;
+function addFileInput() {
+ 	var d = document.createElement("div");
+ 	var file = document.createElement("input");
+ 	file.setAttribute("type", "file");
+ 	file.setAttribute("name", "attachment"+upload_number);
+ 	d.appendChild(file);
+ 	document.getElementById("moreUploads").appendChild(d);
+ 	upload_number++;
+}</script>
     <div id="editor">
+    
       Go ahead&hellip;
     </div>
   </div>

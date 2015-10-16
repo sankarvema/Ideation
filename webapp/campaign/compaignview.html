@@ -15,7 +15,9 @@
 
         <link rel="stylesheet" href="../assets/javascrits/jquery-ui.css">
 
-	 
+	 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+	<link href="../assets/stylesheets/style.css" rel="stylesheet" />
+	<link href="../assets/stylesheets/bi-style.css" rel="stylesheet" />
 
 		<script src="../assets/javascripts/jquery-1.11.3.min.js"></script>
 		<script src="../assets/javascripts/jquery-ui-1.11.4.min.js"></script>
@@ -176,17 +178,33 @@ nav {
         </section>
 
         <section class="body">
-        
-        <div class="container">
-        <div class="jumbotron">
-        <img src="../assets/images/status.jpg" height="120" width="900">
-        </div></div>
-  <div class="container">
+      <div class="container">
+ 
+ 
+	<div id="sec-backColor" class="section fullDiv secOpt" data-content="Background color">				
+			
+		<div class="sectionInner sectionInner-half sectionInner-left">
 
+<font size="3" color="rgb(126,196,107)">responded users</font>
+ <svg width="80" height="10">
+
+  <rect x="6" y="6" width="6" height="6" style="fill:rgb(126,196,107)"></rect>
+</svg>
+ <font size="3" color="#e25a48">users yet to be responded</font>
+			<svg width="120" height="10">
+		
+  <rect x="6" y="6" width="6" height="6" style="fill:#e25a48"></rect></svg>
+				<span id="test5" class="testBar">45</span>
+				
+				</div></div>
+				
+			
+		<br><br>
+		<br>
+		<br>
   
-
-  
-
+<div class="container">
+<br>
    <div class="container-fluid">
         <div class="row">
 
@@ -199,8 +217,8 @@ nav {
                 <table id="grid" class="table table-condensed table-hover table-striped" data-selection="true" data-multi-select="true" data-row-select="true" data-keep-selection="true">
                     <thead>
                         <tr>
-                            <th data-column-id="campaignid" data-identifier="true" data-order="text">CampaignID</th>
-                            <th data-column-id="title" data-order="asc">Title</th>
+                           
+                            <th data-column-id="title" data-order="asc">Idea Title</th>
                             <th data-column-id="desc" data-type="text">Description</th>
                             <th data-column-id="date" data-order="asc">Posted on</th>
                             <th data-column-id="status" data-identifier="true" data-type="text">Status</th>
@@ -209,42 +227,36 @@ nav {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>11D11A0472</td>
                             <td>John</td>
                             <td>DEsc</td>
                             <td>12/05/2009</td>
                             <td>completed</td>
                         </tr>
                         <tr>
-                            <td>11D11A042</td>
                             <td>mary</td>
                             <td>wkdm</td>
                             <td>12/05/2009</td>
                             <td>completed</td>
                             </tr>
                         <tr>
-                            <td>1D11A0472</td>
                             <td>sam</td>
                             <td>Something has to be written3</td>
                             <td>12/05/2009</td>
                             <td>incompleted</td>
                         </tr>
                         <tr>
-                            <td>11D11A0474</td>
                             <td>idea ulb</td>
                             <td>Something has to be written </td>
                             <td>12/05/2009</td>
                            <td>yet tocompleted</td>
                         </tr>
                         <tr>
-                            <td>11D110472</td>
                             <td>hsagsfd</td>
                             <td>Something has to be written 5</td>
                             <td>12/05/2009</td>
                             <td>not completed</td>
                         </tr>
                         <tr>
-                            <td>11D10472</td>
                             <td>zjcuds</td>
                             <td>Something has to be written6</td>
                             <td>12/05/2009</td>
@@ -256,7 +268,8 @@ nav {
             </div>
         </div>
     </div>
-
+</div><br>
+<br><br>
     
    
   </container>
@@ -318,6 +331,11 @@ nav {
     <script src="../assets/javascripts/bootstrap.js"></script>
     <script src="../assets/javascripts/jquery.bootgrid.js"></script>
     <script src="../assets/javascripts/jquery.bootgrid.fa.js"></script>
+    
+	<script src="../assets/javascripts/jquery-1.11.2.min.js"></script>	
+	<script src="../assets/javascripts/jquery.easing.1.3.js"></script>
+	<script src="../assets/javascripts/jquery-barIndicator.js"></script>
+	<script src="../assets/javascripts/scripts.js"></script>
 
     <script type="text/javascript">
 RowSorter("#grid");
