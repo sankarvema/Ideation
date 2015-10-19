@@ -1,0 +1,17 @@
+Search: <input type="text" ng-model="search.title">
+<ul>
+  <li ng-repeat="campaign in campaignCollection | filter: search">
+    <a ng-show="!editing[$index]" href="#/{{campaign._id}}">{{campaign.title}}</a>
+    | {{campaign.desc}}
+    | {{campaign.startDate}}
+    | {{campaign.endDate}}
+    | {{campaign.sponsor}}
+    <button ng-show="!editing[$index]" ng-click="edit($index)">edit</button>
+    <button ng-show="!editing[$index]" ng-click="remove($index)">remove</button>
+
+    <input ng-show="editing[$index]" type="text" ng-model="campaign.title">
+    <button ng-show="editing[$index]" ng-click="update($index)">update</button>
+    <button ng-show="editing[$index]" ng-click="cancel($index)">cancel</button>
+  </li>
+</ul>
+New campaign <input type="text" ng-model="newCampaign"><button ng-click="save()">Create</button>
